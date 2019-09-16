@@ -1,0 +1,42 @@
+
+abstract class Shape
+{	
+	abstract public void draw();
+}
+
+class Triangle extends Shape
+{public void draw()
+{System.out.println("Draw method from Triangle abstract of Shape");}
+}
+class Polygon extends Shape
+{
+	public void draw()
+	{System.out.println("Draw method from Polygon abstract of Shape");}
+}
+
+class Circle extends Shape
+{
+	public void draw()
+	{System.out.println("Draw method from Circle abstract of Shape");}
+}
+public class Q5 
+{
+	public static void main(String[] args) {
+			/*Shape t1 = new Triangle();
+			Shape t2 = new Polygon();
+			Shape t3 = new Circle();
+			t1.draw();
+			t2.draw();
+			t3.draw(); */
+		Shape s[] = new Shape[3];
+		
+		s[0] = new Triangle();
+		s[1] = new Polygon();
+		s[2] = new Circle();
+		
+		s[0].draw();
+		s[1].draw();
+		s[2].draw();
+	}
+
+}

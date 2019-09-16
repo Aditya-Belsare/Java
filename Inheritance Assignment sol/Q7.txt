@@ -1,0 +1,32 @@
+package from_Q7;
+
+class Parent1{
+	int k;
+	void disp1()
+	{
+		this.k=10;
+		System.out.println("value of k in Parent 1 is: "+k);
+	}
+	
+}
+interface Parent2{
+	void disp2();
+}
+
+class Child extends Parent1 implements Parent2
+{
+	public void disp2()
+	{
+		System.out.println("In Display 2");
+	}
+}
+public class Q7 {
+
+	public static void main(String[] args) {
+	
+		Child c = new Child();
+		c.disp1();
+		c.disp2();
+	}
+
+}

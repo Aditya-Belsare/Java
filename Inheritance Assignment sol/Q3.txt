@@ -1,0 +1,32 @@
+
+class base1
+{
+	base1()
+	{
+		System.out.println("Base class");
+	}
+}
+
+class child_1 extends base1
+{
+	child_1()
+	{
+		System.out.println("Child 1 class");
+	}
+}
+
+class child_2 extends base1{
+	child_2()
+	{
+		System.out.println("Child 2 class");
+	}
+}
+public class Q3 {
+	public static void main(String[] args) {
+		
+		child_1 c1 = new child_1();
+		child_2 c2 = new child_2();
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package from_Q7;
+
+interface game
+{
+	abstract void play();
+}
+
+class cricket implements game
+{
+	public void play()
+	{
+	System.out.println("Playing Cricker");
+	}
+}
+class football implements game
+{
+	public void play()
+	{
+	System.out.println("Playing Football");
+	}
+}
+class tennis implements game
+{
+	public void play()
+	{
+	System.out.println("Playing Tennis");
+	}
+}
+public class Q9 {
+	
+	static void perform(game ref)
+	{
+		ref.play();
+	}
+
+	public static void main(String[] args) 
+	{
+		perform (new cricket());
+		perform (new football());
+		perform (new tennis());
+	}
+
+}

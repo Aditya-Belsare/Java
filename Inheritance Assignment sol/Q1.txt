@@ -1,0 +1,40 @@
+
+class base
+{
+	base()
+	{
+	System.out.println("this is from Base class");
+	}
+}
+
+class child extends base
+{
+	child()
+	{
+		System.out.println("this is from Child class");
+	}
+	child(int x)
+	{
+		System.out.println("this is from child class parameterized  "+x);
+	}
+}
+
+class child1 extends child
+{
+	child1()
+	{
+		super(20);
+		System.out.println("this is from child1 class");
+	}
+}
+
+public class Q1
+{
+	public static void main(String[] args) 
+	{
+		child1 a1 = new child1();
+		
+		System.out.println("this is from Main");
+
+	}
+}

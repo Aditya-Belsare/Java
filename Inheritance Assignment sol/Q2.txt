@@ -1,0 +1,25 @@
+
+class Vechical
+{
+	public void start()
+	{
+		System.out.println("Start method From Vechical class");
+	}
+}
+class FourWheeler extends Vechical
+{
+	public void start()
+	{
+		System.out.println("Start method From FourWheeler class");
+	}
+}
+
+public class Q2 
+{
+	public static void main(String[] args)
+	{
+		FourWheeler f1 = new FourWheeler();
+		f1.start();
+	}
+
+}

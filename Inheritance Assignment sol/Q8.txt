@@ -1,0 +1,37 @@
+package from_Q7;
+
+class base1
+{
+	base1(int a)
+	{
+		System.out.println("This is Parameterizer constructor from base 1: "+a);
+	}
+}
+
+class sub1 extends base1
+{
+
+	sub1()
+	{	super(5);
+		System.out.println("This is default constructor of sub 1");
+	}
+	sub1(int a) 
+	{
+		super(20);
+		System.out.println("This is parameterized const. from sub 1 :"+a);
+	}
+	sub1(int x, int y)
+	{	super(6);
+		System.out.println("In two parameterized const. "+x+"\t"+y+"\t");
+	}	
+}
+public class Q8 
+{
+	public static void main(String[] args) 
+	{
+		sub1 s = new sub1();
+		sub1 s1= new sub1(30);
+		sub1 s2= new sub1(3,4);
+	}
+
+}
